@@ -1,0 +1,154 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww30040\viewh17200\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Big Data Refresher Topics\
+1. Big Data & Hadoop\
+2. Data Storage & Management \
+3. Big Data Search\
+4. Apache Spark\
+5. Spark SQL & DataFrames\
+6. Machine learning in Spark\
+7. Real-time Data Processing with Kafka\
+8. ETL Processes\
+9. Data Warehousing and Data Lakes\
+10. Cloud Platforms and ETL Pipelines\
+\
+=========================================\
+\
+For Implementing Project in Big Data\
+\
+Cloud Deployment - AWS S3, Glue, Lambda, Redshift\
+Big Data - Spark, Impala, Hive, Kafka, Mongo DB\
+Data Engineering - Sqoop, Airflow, Oozie\
+Monitoring - Datadog, ELK Stack\
+Machine learning - Spark MLib\
+Visualisation - Power BI, Tableau, Custom web-based Dashboard\
+Security - Kerberos for authentication\
+Others: Git, CI/CD\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 =========================================\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 Big Data\
+- refers to large, complex datasets that cannot be processed using traditional data processing methods \
+due to volume, variety, velocity\
+Volume - sheer amount of data generated every second, measured in TB, PB\
+Variety - different types of data - structured, unstructured and semi-structured \
+Velocity - speed at which data is generated, collected and analysed\
+\
+\
+Hadoop\
+- framework used for storing and processing Big Data in a distributed computing environment\
+- it allows large datasets to be processed in parallel across cluster of computers, \
+that makes it highly scalable and fault-tolerant\
+\
+Core concepts of Hadoop\
+1. HDFS\
+- Hadoop distributed file system designed to store large files across a cluster of machines.\
+- It divides the data into small blocks (typically 128 MB, 256 MB) which are distributed across multiple\
+Nodes to provide fault-tolerant and parallel processing	.\
+\
+2. MapReduce\
+- MapReduce is a programming model used for processing large datasets in parallel.\
+- It breaks down tasks into smaller sub-tasks (map) and process them concurrently across multiple machines\
+- The output from these tasks is aggregated (reduce) to get the final result.\
+\
+3. YARN\
+- Yet Another Resource Negotiator\
+- resource management layer that schedules and allocate resources for different applications running on\
+Hadoop clusters. \
+- It ensures that resources are efficiently utilised across the cluster\
+\
+4. Hive\
+- data warehousing tool that provides a SQL-Like interface to query data stored in Hadoop.\
+- Uses HiveQL to query\
+- it\'92s built on top of Hadoop\
+- specifically designed to query and manage large datasets in HDFS\
+- Hive runs on top of Hadoop and uses MapReduce or other engines like Tez or Spark to process data in a\
+Distributed manner\
+- It is optimised for large-scale and batch-oriented processing and does not provide real time transactions\
+\
+5. Pig\
+- abstraction over MapReduce\
+- It has its own language known as Pig Latin\
+- used to process large datasets\
+\
+6. HBase\
+- NoSQL distributed database\
+- built on top of Hadoop\
+- it is designed for real-time read/write access to Big Data and used for handling sparse data like logs..\
+\
+7. Sqoop\
+- a tool used for transferring data between Hadoop and RDBMS\
+- enables importing data from databases to HDFS or from HDFS to databases.\
+\
+8. Flume\
+- Distributed service used for ingesting streaming data into Hadoop.\
+- commonly used to collect and transport large amounts of log data from different source to HDFS\
+\
+9. Oozie\
+- workflow scheduler system that manages and schedules Hadoop jobs. \
+\
+10. Zookeeper\
+- centralized service for maintaining configuration information, naming, synchronisation and group services.\
+- used to coordinate distributed systems and manage the states of the Hadoop ecosystem \
+\
+\
+11. Spark\
+- distributed computing system designed for processing large volumes of the data at high speed.\
+- In-memory processing\
+- speed\
+- Stream processing\
+- Machine learning and predictive analysis\
+- Data lake management\
+\
+12. Impala\
+- distributed SQL query engine designed for Hadoop.\
+- provides fast, interactive SQL queries on large datasets stored in Hadoop\'92s HDFS or Apache Base.\
+- SQL Interface - Impala supports standard SQL queries\
+- Real-time querying\
+\
+13. Kafka\
+- event streaming platform used for building real-time data pipeline and streaming applications\
+- Real-time streaming \
+- Durability - kafka stores data in distributed logs, ensuring that data is available if system fails\
+- Pub/Sub model - uses a publish-subscribe model, allowing producers to send message and consumers to\
+Retrieve them asynchronously\
+\
+14. Airflow\
+- workflow orchestration platform that allows you to schedule, monitor and manage complex data pipelines.\
+- originally developer by Airbnb, but now it\'92s part of Apache\
+- uses DAGs - Directed Acyclic Graph - where each task is executed in a specific order.\
+- Scheduling and Monitoring\
+- Extensible - could be integrated with different data sources like databases, Hadoop, AWS, GCP, Azure\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}
